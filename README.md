@@ -7,7 +7,7 @@
 # Resource Download
 * [X(Twitter)-APKMirror](https://www.apkmirror.com/apk/x-corp/twitter/)
   - 11.81.0-release.0 (311810000)
-  - 12.22.0-prod.01 (312220001)
+  - 12.22.0-prod.01 (312220001) ✅
   - 12.23.1-prod.01 (312231001)
   - 12.24.0-prod.02 (312240002)
 * [Instagram-APKMirror](https://www.apkmirror.com/apk/instagram/instagram-instagram/)
