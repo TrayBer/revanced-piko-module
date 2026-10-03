@@ -51,7 +51,7 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.a
 enable-update-checks = true
 
 [Twitter]
-enabled = true
+enabled = false
 build-mode = "both"   # 'both', 'apk' or 'module'. default: apk
 patches-source = "crimera/piko-newx"
 # patches-version = "v3.22.0"   # 'latest', 'dev', or a version number. default: "latest"
@@ -62,6 +62,16 @@ archive-dlurl = "https://archive.org/download/maxwe11/apks/com.twitter.android"
 version = "12.30.0-prod.01"   # 'auto', 'experimental', 'latest' or a version number (e.g. '17.40.41'). default: auto
 included-patches = "'NewX: Restore Twitter branding'"
 enable-update-checks = true
+
+[Instagram]
+enabled = true
+build-mode = "both"
+patches-source = "crimera/piko"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Piko"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+archive-dlurl = "https://archive.org/download/maxwe11/apks/com.instagram.android"
+version = "439.0.0.37.89"   # 'auto', 'experimental', 'latest' or a version number (e.g. '17.40.41'). default: auto
 
 [Music]
 enabled = false
