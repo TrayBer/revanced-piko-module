@@ -6,6 +6,19 @@ parallel-jobs = 1
 
 # you can use rvmm-config-gen to generate a config
 
+[Twitter]
+enabled = true
+build-mode = "both"   # 'both', 'apk' or 'module'. default: apk
+patches-source = "crimera/piko-newx"
+patches-version = "v3.51.0"   # 'latest', 'dev', or a version number. default: "latest"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Piko"
+# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
+archive-dlurl = "https://archive.org/download/maxwe11/apks/com.twitter.android"
+version = "12.30.0-prod.01"   # 'auto', 'experimental', 'latest' or a version number (e.g. '17.40.41'). default: auto
+included-patches = "'NewX: Restore Twitter branding'"
+enable-update-checks = true
+
 [YouTube-Morphe]
 enabled = false
 app-name = "YouTube"
@@ -48,19 +61,6 @@ rv-brand = "DeVanced"
 cli-source = "MorpheApp/morphe-cli"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
-enable-update-checks = true
-
-[Twitter]
-enabled = true
-build-mode = "both"   # 'both', 'apk' or 'module'. default: apk
-patches-source = "crimera/piko-newx"
-patches-version = "v3.50.0"   # 'latest', 'dev', or a version number. default: "latest"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Piko"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
-archive-dlurl = "https://archive.org/download/maxwe11/apks/com.twitter.android"
-version = "12.30.0-prod.01"   # 'auto', 'experimental', 'latest' or a version number (e.g. '17.40.41'). default: auto
-included-patches = "'NewX: Restore Twitter branding'"
 enable-update-checks = true
 
 [Instagram]
