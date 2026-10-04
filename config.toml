@@ -51,7 +51,7 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.a
 enable-update-checks = true
 
 [Twitter]
-enabled = false
+enabled = true
 build-mode = "both"   # 'both', 'apk' or 'module'. default: apk
 patches-source = "crimera/piko-newx"
 # patches-version = "v3.22.0"   # 'latest', 'dev', or a version number. default: "latest"
@@ -64,7 +64,7 @@ included-patches = "'NewX: Restore Twitter branding'"
 enable-update-checks = true
 
 [Instagram]
-enabled = true
+enabled = false
 build-mode = "apk"
 patches-source = "crimera/piko"
 patches-version = "v3.9.0"   # 'latest', 'dev', or a version number. default: "latest"
