@@ -65,7 +65,7 @@ enable-update-checks = true
 
 [Instagram]
 enabled = true
-build-mode = "both"
+build-mode = "apk"
 patches-source = "crimera/piko"
 patches-version = "v3.9.0"   # 'latest', 'dev', or a version number. default: "latest"
 cli-source = "MorpheApp/morphe-cli"
