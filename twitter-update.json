@@ -1,6 +1,6 @@
 {
-  "version": "v12.32.0-prod.01 (patches 3.54.1.mpp)",
-  "versionCode": 48,
-  "zipUrl": "https://github.com/TrayBer/revanced-piko-module/releases/download/48/twitter-piko-module-v12.32.0-prod.01-all.zip",
+  "version": "v12.32.0-prod.01 (patches 3.54.2.mpp)",
+  "versionCode": 49,
+  "zipUrl": "https://github.com/TrayBer/revanced-piko-module/releases/download/49/twitter-piko-module-v12.32.0-prod.01-all.zip",
   "changelog": "https://raw.githubusercontent.com/TrayBer/revanced-piko-module/update/build.md"
 }
