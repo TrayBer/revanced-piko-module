@@ -7,7 +7,7 @@ parallel-jobs = 1
 # you can use rvmm-config-gen to generate a config
 
 [Twitter]
-enabled = false
+enabled = true
 build-mode = "both"   # 'both', 'apk' or 'module'. default: apk
 patches-source = "crimera/piko-newx"
 patches-version = "v3.57.0"   # 'latest', 'dev', or a version number. default: "latest"
@@ -64,7 +64,7 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.a
 enable-update-checks = true
 
 [Instagram]
-enabled = true
+enabled = false
 build-mode = "apk"
 patches-source = "crimera/piko"
 patches-version = "v3.10.0"   # 'latest', 'dev', or a version number. default: "latest"
