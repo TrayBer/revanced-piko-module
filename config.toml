@@ -6,6 +6,19 @@ parallel-jobs = 1
 
 # you can use rvmm-config-gen to generate a config
 
+[Twitter]
+enabled = true
+build-mode = "both"   # 'both', 'apk' or 'module'. default: apk
+patches-source = "crimera/piko-newx"
+patches-version = "v3.75.0"   # 'latest', 'dev', or a version number. default: "latest"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Piko"
+# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
+archive-dlurl = "https://archive.org/download/maxwe11/apks/com.twitter.android"
+version = "12.41.0-prod.01"   # 'auto', 'experimental', 'latest' or a version number (e.g. '17.40.41'). default: auto
+included-patches = "'NewX: Restore Twitter branding'"
+enable-update-checks = true
+
 [YouTube-Morphe]
 enabled = false
 app-name = "YouTube"
@@ -14,8 +27,8 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
 build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+enable-update-checks = true
 
 [Music-Morphe]
 enabled = false
@@ -26,8 +39,8 @@ rv-brand = "Morphe"
 build-mode = "both"
 arch = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+enable-update-checks = true
 
 [Reddit-Morphe]
 enabled = false
@@ -38,7 +51,6 @@ patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
-uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 dpi = "120-640dpi"
 
 [GooglePhotos]
@@ -49,48 +61,32 @@ rv-brand = "DeVanced"
 cli-source = "MorpheApp/morphe-cli"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
+enable-update-checks = true
+
+[Instagram]
+enabled = false
+build-mode = "apk"
+patches-source = "crimera/piko"
+# patches-version = "v3.61.0"   # 'latest', 'dev', or a version number. default: "latest"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Piko"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+archive-dlurl = "https://archive.org/download/maxwe11/apks/com.instagram.android"
+version = "452.1.0.53.64"   # 'auto', 'experimental', 'latest' or a version number (e.g. '17.40.41'). default: auto
 
 [Music]
 enabled = false
 build-mode = "both"
 arch = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [YouTube]
 enabled = false
 build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-
-[Twitter]
-enabled = true
-build-mode = "both"
-patches-source = "crimera/piko-newx"
-cli-source = "MorpheApp/morphe-cli"
-# cli-version = "v1.15.1"
-rv-brand = "Piko"
-patches-version = "v3.22.0"   # 'latest', 'dev', or a version number. default: "latest"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter/"
-archive-dlurl = "https://archive.org/download/maxwe11/apks/com.twitter.android"
-version = "12.24.0-prod.02"
-included-patches = "'NewX: Restore Twitter branding'"
-
-[Instagram]
-# 流程无法正常进行，可能修补插件不能用于构建
-enabled = false
-build-mode = "both"
-patches-source = "crimera/piko"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Piko"
-version = "439.0.0.37.89"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram/"
-archive-dlurl = "https://archive.org/download/maxwe11/apks/com.instagram.android"
 
 [Twitch]
 enabled = false
 apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
-uptodown-dlurl = "https://twitch.en.uptodown.com/android"
