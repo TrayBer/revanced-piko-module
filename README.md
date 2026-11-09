@@ -1,5 +1,5 @@
 # changes
-Compared with the original project's `main` branch, the following changes are required:
+⚠️ Compared with the original project's `main` branch, the following changes are required:
 - Modify the `config.toml` configuration file:
   ```md
   [Twitter]
