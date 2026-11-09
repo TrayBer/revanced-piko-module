@@ -1,3 +1,30 @@
+# changes
+Compared with the original project's `main` branch, the following changes are required:
+- Modify the `config.toml` configuration file:
+  ```md
+  [Twitter]
+  enabled = true
+  build-mode = "both"   # 'both', 'apk' or 'module'. default: apk
+  patches-source = "crimera/piko-newx"
+  patches-version = "v3.75.0"   # 'latest', 'dev', or a version number. default: "latest"
+  rv-brand = "Piko"
+  # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
+  archive-dlurl = "xxxxxxxx"
+  version = "12.41.0-prod.01"   # 'auto', 'experimental', 'latest' or a version number (e.g. '17.40.41'). default: auto
+  included-patches = "'NewX: Restore Twitter branding'"
+  enable-update-checks = true
+  ```
+- Add other applications:`enabled = false`
+- Disable automatic execution of GitHub Actions.
+  - Modify the file at this path:`.github/workflows/ci.yml`
+  ```yaml
+  name: CI
+  on:
+  workflow_dispatch:
+  # schedule:      # Disable automatic builds in GitHub Actions
+  #   - cron: "0 16 * * *"
+  ```
+
 # Related Projects
 * [Morphe Patches](https://github.com/MorpheApp/morphe-patches)
 * [piko](https://github.com/crimera/piko)
